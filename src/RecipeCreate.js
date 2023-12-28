@@ -29,7 +29,8 @@ function RecipeCreate({recipes, handleSetRecipes}) {
     });
   };
   const handleSubmit = () => {
-    console.log("Submitted")
+    console.log("Submitted");
+    event.preventDefault();
     handleSetRecipes(formData);
     
     setFormData(initialFormData);
