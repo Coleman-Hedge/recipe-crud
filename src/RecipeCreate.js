@@ -28,7 +28,7 @@ function RecipeCreate({recipes, handleSetRecipes}) {
       [target.name]: target.value
     });
   };
-  const handleSubmit = () => {
+  const handleSubmit = (event) => {
     console.log("Submitted");
     event.preventDefault();
     handleSetRecipes(formData);
